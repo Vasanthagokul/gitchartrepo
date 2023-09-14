@@ -3,7 +3,7 @@ entries:
   demochart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-09-14T23:05:05.245657653+05:30"
+    created: "2023-09-15T00:54:16.298709074+05:30"
     description: A Helm chart for Kubernetes
     digest: b5982e5da700bf83d88a4a708947fdcca41cce8cb4277b1028b2942ca734b04e
     name: demochart
@@ -11,4 +11,29 @@ entries:
     urls:
     - demochart-0.1.0.tgz
     version: 0.1.0
-generated: "2023-09-14T23:05:05.244503689+05:30"
+  firstchart:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-09-15T00:54:16.30654217+05:30"
+    dependencies:
+    - import-values:
+      - child: primary.service
+        parent: mysqlService
+      name: mysql
+      repository: '@bitnami'
+      tags:
+      - enabled
+      version: ^9.10.10
+    - name: tomcat
+      repository: '@bitnami'
+      tags:
+      - enabled
+      version: ~10.10.x
+    description: A Helm chart for Kubernetes
+    digest: 1eda719a51e741e2309f1a5a7be72148fcdf6320bf5025f67c94e7e05ad0be66
+    name: firstchart
+    type: application
+    urls:
+    - firstchart-0.2.0.tgz
+    version: 0.2.0
+generated: "2023-09-15T00:54:16.298155329+05:30"
