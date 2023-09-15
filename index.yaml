@@ -1,9 +1,24 @@
 apiVersion: v1
 entries:
+  couponservice:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-09-15T17:45:26.922474484+05:30"
+    dependencies:
+    - name: mysql
+      repository: '@bitnami'
+      version: ^9.10.10
+    description: A Helm chart for Kubernetes
+    digest: 3049e52ab66e9260f48b15c75611595c1d3a2a63ad53d5427902d40d5b884d93
+    name: couponservice
+    type: application
+    urls:
+    - couponservice-0.1.0.tgz
+    version: 0.1.0
   demochart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-09-15T00:54:16.298709074+05:30"
+    created: "2023-09-15T17:45:26.923029862+05:30"
     description: A Helm chart for Kubernetes
     digest: b5982e5da700bf83d88a4a708947fdcca41cce8cb4277b1028b2942ca734b04e
     name: demochart
@@ -14,7 +29,7 @@ entries:
   firstchart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-09-15T00:54:16.30654217+05:30"
+    created: "2023-09-15T17:45:26.931673358+05:30"
     dependencies:
     - import-values:
       - child: primary.service
@@ -36,4 +51,4 @@ entries:
     urls:
     - firstchart-0.2.0.tgz
     version: 0.2.0
-generated: "2023-09-15T00:54:16.298155329+05:30"
+generated: "2023-09-15T17:45:26.918519624+05:30"
