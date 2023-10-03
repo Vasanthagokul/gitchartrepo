@@ -3,7 +3,7 @@ entries:
   auth-backend:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-09-18T19:29:35.492493411+05:30"
+    created: "2023-10-03T18:15:39.580899743+05:30"
     description: A Helm chart for Auth Backend
     digest: c700bdb9bee309768b05e2c0d2929106598c9508e22c42389a6b024e119bd7ac
     name: auth-backend
@@ -14,7 +14,7 @@ entries:
   couponservice:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-09-18T19:29:35.496937206+05:30"
+    created: "2023-10-03T18:15:39.585720849+05:30"
     dependencies:
     - name: mysql
       repository: '@bitnami'
@@ -29,7 +29,7 @@ entries:
   demochart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-09-18T19:29:35.497529169+05:30"
+    created: "2023-10-03T18:15:39.586185419+05:30"
     description: A Helm chart for Kubernetes
     digest: b5982e5da700bf83d88a4a708947fdcca41cce8cb4277b1028b2942ca734b04e
     name: demochart
@@ -40,7 +40,7 @@ entries:
   firstchart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-09-18T19:29:35.505335656+05:30"
+    created: "2023-10-03T18:15:39.593803138+05:30"
     dependencies:
     - import-values:
       - child: primary.service
@@ -62,4 +62,19 @@ entries:
     urls:
     - firstchart-0.2.0.tgz
     version: 0.2.0
-generated: "2023-09-18T19:29:35.491067032+05:30"
+  users-backend:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-10-03T18:15:39.594188057+05:30"
+    dependencies:
+    - name: auth-backend
+      repository: '@gitrepo'
+      version: 0.1.0
+    description: A Helm chart for Kubernetes
+    digest: bc63f6f7479958de5ef6c57ddf3a5d129508ac1fc7bc36255facde5790480eb0
+    name: users-backend
+    type: application
+    urls:
+    - users-backend-0.1.0.tgz
+    version: 0.1.0
+generated: "2023-10-03T18:15:39.579803149+05:30"
