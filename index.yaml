@@ -3,7 +3,7 @@ entries:
   auth-backend:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-10-04T17:37:00.096315114+05:30"
+    created: "2023-10-04T17:45:11.815336275+05:30"
     description: A Helm chart for Auth Backend
     digest: c700bdb9bee309768b05e2c0d2929106598c9508e22c42389a6b024e119bd7ac
     name: auth-backend
@@ -14,7 +14,7 @@ entries:
   couponservice:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-10-04T17:37:00.1009981+05:30"
+    created: "2023-10-04T17:45:11.819438567+05:30"
     dependencies:
     - name: mysql
       repository: '@bitnami'
@@ -29,7 +29,7 @@ entries:
   demochart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-10-04T17:37:00.101579888+05:30"
+    created: "2023-10-04T17:45:11.819860786+05:30"
     description: A Helm chart for Kubernetes
     digest: b5982e5da700bf83d88a4a708947fdcca41cce8cb4277b1028b2942ca734b04e
     name: demochart
@@ -40,7 +40,7 @@ entries:
   firstchart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-10-04T17:37:00.108610187+05:30"
+    created: "2023-10-04T17:45:11.826925087+05:30"
     dependencies:
     - import-values:
       - child: primary.service
@@ -65,16 +65,16 @@ entries:
   users-backend:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-10-04T17:37:00.108993015+05:30"
+    created: "2023-10-04T17:45:11.827328596+05:30"
     dependencies:
     - name: auth-backend
       repository: https://github.com/Vasanthagokul/gitchartrepo
       version: 0.1.0
     description: A Helm chart for Kubernetes
-    digest: 531a740dfdaba5c938be99e1283dcdd513fb6ee91d4927f9f3009caae1a47e76
+    digest: 83571612d84ca35cd3214e1f353d8923c4bb844d8b9f88afca4c0dd8275338f9
     name: users-backend
     type: application
     urls:
     - users-backend-0.1.0.tgz
     version: 0.1.0
-generated: "2023-10-04T17:37:00.096037136+05:30"
+generated: "2023-10-04T17:45:11.815034291+05:30"
